@@ -1,11 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: rgb(57, 169, 219);
+  font-family: Rubik, Arial;
 }
 
 h1 {
-    color: navy;
+    text-align: center;
 }
 
 li {
     color: gray;
+}
+
+form {
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+}
+
+.list {
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/style.css">
-    <
+    
     <title>Document</title>
 </head>
 <body>
@@ -17,10 +17,40 @@
             <li>Sign Up</li>
         </ul>
 
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password">
+        </form>
+
 
     </nav>
     <div>
         <h1>Searh Bar</h1>
+        <div id="search-form">
+            <form action="#" method="POST">
+                <label for="What">What are you searching for?</label>
+                <input type="text" name="first-text-field" value="#">
+            </form>
+        </div>
+
+    <div class="list">
+        <form>
+            <label for="city">Ideal city to visit?</label>
+            <input type="text" list="cities" id="city" name="city">
+          
+            <datalist id="cities">
+              <option value="New York City"></option>
+              <option value="Tokyo"></option>
+              <option value="Barcelona"></option>
+              <option value="Mexico City"></option>
+              <option value="Melbourne"></option>
+              <option value="Other"></option>  
+            </datalist>
+          </form>
+    </div>
     </div>
 
 

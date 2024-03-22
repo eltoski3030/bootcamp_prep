@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-bar">
+        <img src="#" alt="#">
         <ul>
             <li>Home</li>
             <li>Profile</li>
@@ -16,42 +17,36 @@
             <li>Log In</li>
             <li>Sign Up</li>
         </ul>
-
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="user-password">Password:</label>
-            <input type="password" id="user-password" name="user-password">
-        </form>
-
-
     </nav>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="user-password">
+    </form>
     <div>
         <h1>Searh Bar</h1>
         <div id="search-form">
-            <form action="#" method="POST">
+            <form action="search_results.html" method="POST">
                 <label for="What">What are you searching for?</label>
                 <input type="text" name="first-text-field" value="#">
+            <br>
+                <label for="city">Ideal city to visit?</label>
+                <input type="text" list="cities" id="city" name="city">
+            <br>
+                <datalist id="cities">
+                <option value="New York City"></option>
+                <option value="Tokyo"></option>
+                <option value="Barcelona"></option>
+                <option value="Mexico City"></option>
+                <option value="Melbourne"></option>
+                <option value="Other"></option>  
+                </datalist>
+                <input type="submit" value="Search">
             </form>
+        
         </div>
-
-    <div class="list">
-        <form>
-            <label for="city">Ideal city to visit?</label>
-            <input type="text" list="cities" id="city" name="city">
-          
-            <datalist id="cities">
-              <option value="New York City"></option>
-              <option value="Tokyo"></option>
-              <option value="Barcelona"></option>
-              <option value="Mexico City"></option>
-              <option value="Melbourne"></option>
-              <option value="Other"></option>  
-            </datalist>
-          </form>
-    </div>
-    </div>
 
 
     <script src="script.js"></script>
